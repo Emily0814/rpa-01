@@ -1,0 +1,14 @@
+﻿{
+  "Name": "자료공개",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "z26_3yX73UG76MSCISV24w",
+  "Reference": "vZ2VzdSpbEGGUAxA1Waafw/z26_3yX73UG76MSCISV24w",
+  "ParentRef": "vZ2VzdSpbEGGUAxA1Waafw/9zL-d2c4REWk_tTd3INl9w",
+  "Created": "2025-11-24T14:04:46.5542208Z",
+  "Updated": "2025-11-24T14:04:46.5542208Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

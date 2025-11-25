@@ -1,0 +1,14 @@
+﻿{
+  "Name": "조회",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "4BOmyiJQyU2CwFKmPqqCcw",
+  "Reference": "vZ2VzdSpbEGGUAxA1Waafw/4BOmyiJQyU2CwFKmPqqCcw",
+  "ParentRef": "vZ2VzdSpbEGGUAxA1Waafw/9zL-d2c4REWk_tTd3INl9w",
+  "Created": "2025-11-24T14:06:20.3487174Z",
+  "Updated": "2025-11-24T14:06:20.3487174Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

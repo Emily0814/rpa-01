@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XDeHdo8A30KnCLji5HWIqg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="adf.kfia.or.kr/company/open/openData.do" CVScreenId="0b4de757-e4d9-4d85-a565-b84f611891ad" DesignTimeRectangle="1479, 445, 44, 26" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='btn_lookup_1' type='' tag='A' class='btn-skyT link' aaname='조회' check:innerText='조회' /&gt;" Guid="37be59d0-04e6-4a73-a3b5-a6d7508b1921" ScopeSelectorArgument="&lt;html app='chrome.exe' title='식품등의 기능성 표시·광고 자율심의 - 자료공개' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0b4de757-e4d9-4d85-a565-b84f611891ad" DesignTimeRectangle="361, 430, 79, 55" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='' aaname='1' check:innerText='1' /&gt;" Guid="72740951-834b-480d-b343-5573f75142e7" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f6129343022ae756aa32e37f715bf42b.png" xmlns="">0cCsniCJYFU6PY_pNqOcHmg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

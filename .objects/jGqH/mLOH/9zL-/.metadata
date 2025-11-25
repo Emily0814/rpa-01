@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome 기능성 표시식품 표시·광고 자율심의",
+  "Type": "Screen",
+  "Id": "9zL-d2c4REWk_tTd3INl9w",
+  "Reference": "vZ2VzdSpbEGGUAxA1Waafw/9zL-d2c4REWk_tTd3INl9w",
+  "ParentRef": "vZ2VzdSpbEGGUAxA1Waafw/mLOH847TCECX_HaWy5ePFw",
+  "Created": "2025-11-24T14:03:16.4735578Z",
+  "Updated": "2025-11-24T14:03:16.4735578Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

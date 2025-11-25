@@ -1,0 +1,17 @@
+# UiPath local settings
+*.local
+*.cache
+*.log
+
+# Packages (자동 다운로드되므로 Git에 불필요)
+.vs/
+packages/
+*.nupkg
+project.lock.json
+
+# OS 관련 파일
+Thumbs.db
+.DS_Store
+
+# 기타 임시 파일
+*.tmp

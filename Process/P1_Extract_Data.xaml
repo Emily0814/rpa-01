@@ -1,0 +1,321 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="P1_Extract_Data" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="P1_Extract_Data_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="P1_Extract_Data" sap:VirtualizedContainerService.HintSize="1145.142857142857,3373.1428571428573" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="strSequenceName" />
+      <Variable x:TypeArguments="sd:DataTable" Name="ExtractTableData" />
+      <Variable x:TypeArguments="x:Boolean" Name="blPopupExist1" />
+      <Variable x:TypeArguments="x:Boolean" Name="blPopupExist2" />
+      <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="uiFindChildren" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="621.7142857142857,117.14285714285714" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[strSequenceName]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">P1_Extract_Data</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="621.7142857142857,117.14285714285714" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="sd:DataTable">[ExtractTableData]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="sd:DataTable">[New System.Data.DataTable]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="621.7142857142857,177.71428571428572" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[strSequenceName + &quot;Start&quot;]" />
+    <Sequence DisplayName="P1_Extract_Data 전체 프로세스" sap:VirtualizedContainerService.HintSize="621.7142857142857,2769.714285714286" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome 기능성 표시식품 표시·광고 자율심의" sap:VirtualizedContainerService.HintSize="587.4285714285714,2677.714285714286" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="a7b5fd77-8f46-4244-8169-bb590cdcceab" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="553.1428571428571,2434.8571428571427" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:UiElementExists DisplayName="Element Exists 'A  #none'" Exists="[blPopupExist1]" sap:VirtualizedContainerService.HintSize="518.8571428571429,138.85714285714286" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                <ui:UiElementExists.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a9a9bfb1-c31e-4cff-baa3-2d1aec64af7f" InformativeScreenshot="d862725134e6f2495e062487c67b6886" Selector="&lt;webctrl parentid='fadPop05_' tag='A' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:UiElementExists.Target>
+              </ui:UiElementExists>
+              <If Condition="[blPopupExist1]" sap:VirtualizedContainerService.HintSize="518.8571428571429,453.14285714285717" sap2010:WorkflowViewState.IdRef="If_1">
+                <If.Then>
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,189.71428571428572" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  #none'" sap:VirtualizedContainerService.HintSize="381.7142857142857,129.71428571428572" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7719c93f-8e04-4f72-8420-a69b59dadddc" InformativeScreenshot="d862725134e6f2495e062487c67b6886" Selector="&lt;webctrl parentid='fadPop05_' tag='A' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90.85714285714286" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+              <ui:UiElementExists DisplayName="Element Exists 'A  #none'" Exists="[blPopupExist2]" sap:VirtualizedContainerService.HintSize="518.8571428571429,138.85714285714286" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+                <ui:UiElementExists.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1988b8fc-9726-4856-ac04-0403d7d49540" InformativeScreenshot="1d622ce83883e38e8b3d9e478c91ef91" Selector="&lt;webctrl parentid='fadPop05_' tag='A' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:UiElementExists.Target>
+              </ui:UiElementExists>
+              <If Condition="[blPopupExist2]" sap:VirtualizedContainerService.HintSize="518.8571428571429,453.14285714285717" sap2010:WorkflowViewState.IdRef="If_2">
+                <If.Then>
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,189.71428571428572" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  #none'" sap:VirtualizedContainerService.HintSize="381.7142857142857,129.71428571428572" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3bf52973-841c-4c87-8678-f52d3da0c019" InformativeScreenshot="cc49f462de84ba99a30805a757a093b7" Selector="&lt;webctrl parentid='fadPop06_' tag='A' /&gt;">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90.85714285714286" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '자료공개'" sap:VirtualizedContainerService.HintSize="518.8571428571429,191.42857142857142" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a7b5fd77-8f46-4244-8169-bb590cdcceab" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="adf.kfia.or.kr/main/companyMain.do" CVScreenId="a5a7afe6-2d4c-4a2f-b873-964b20406dc1" ContentHash="R7IKtdXW00C06c4dqKvh7w" DesignTimeRectangle="1161, 199, 200, 57" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='381' tag='A' type='' class='' aaname='자료공개' check:innerText='자료공개' /&gt;" Guid="e23659e0-0876-44b7-a0eb-800538319067" InformativeScreenshot="ac4935484eb5dce277ce80c0e3ed5ce0.png" Reference="vZ2VzdSpbEGGUAxA1Waafw/z26_3yX73UG76MSCISV24w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='기능성 표시식품 표시·광고 자율심의' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <ui:FindChildren Children="[uiFindChildren]" DisplayName="Find Children 'DIV'" Filter="&lt;webctrl /&gt;" sap:VirtualizedContainerService.HintSize="518.8571428571429,138.85714285714286" sap2010:WorkflowViewState.IdRef="FindChildren_1" Scope="FIND_CHILDREN">
+                <ui:FindChildren.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ae3f7e54-c644-4963-908d-e32209a04aa8" InformativeScreenshot="e306373c850069838575bd0284cf9f42" Selector="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' parentid='content' tag='DIV' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:FindChildren.Target>
+              </ui:FindChildren>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="518.8571428571429,180" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[uiFindChildren.ToString]" />
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractTableData]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='순번' ReferenceIdx='0' Name='순번'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='제품명' ReferenceIdx='1' Name='제품명'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='업소명' ReferenceIdx='2' Name='업소명'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='기능성분과 함량' ReferenceIdx='3' Name='기능성분과 함량'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='기능성 표시내용' ReferenceIdx='4' Name='기능성 표시내용'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='출시여부' ReferenceIdx='5' Name='출시여부'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='심의사항조회' ReferenceIdx='6' Name='심의사항조회'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='심의사항조회 Url' ReferenceIdx='7' Name='심의사항조회 Url'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='순번' attr='fulltext' /&gt;&lt;column name='제품명' attr='fulltext' /&gt;&lt;column name='업소명' attr='fulltext' /&gt;&lt;column name='기능성분과 함량' attr='fulltext' /&gt;&lt;column name='기능성 표시내용' attr='fulltext' /&gt;&lt;column name='출시여부' attr='fulltext' /&gt;&lt;column name='심의사항조회' attr='fulltext' name2='심의사항조회 Url' attr2='href' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="518.8571428571429,191.42857142857142" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="Page" MaximumResults="3" ScopeIdentifier="a7b5fd77-8f46-4244-8169-bb590cdcceab" Version="V4">
+                <uix:NExtractData.NextLink>
+                  <uix:TargetAnchorable BrowserURL="adf.kfia.or.kr/company/open/openData.do" CVScreenId="32d977df-0841-46e6-bafa-b84d2949ba3d" CvElementArea="1161, 719, 36, 36" CvType="Button" DesignTimeRectangle="1163, 721, 32, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl href='#none' idx='12' parentid='content' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl href='#none' type='' parentid='content' tag='A' class='' aaname='' /&gt;" Guid="7836ce45-df69-43e7-9932-3962840ac470" ScopeSelectorArgument="&lt;html app='chrome.exe' title='식품등의 기능성 표시·광고 자율심의 - 자료공개' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NExtractData.NextLink>
+                <uix:NExtractData.Target>
+                  <uix:TargetAnchorable BrowserURL="https://adf.kfia.or.kr/company/open/openData.do?menuKey=406" ContentHash="fJPAYbPE9kClPxg-TYMQoQ" DesignTimeRectangle="361, 228, 1200, 600" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;" Guid="58d64087-5b4f-4ba8-8b13-673bdac7a67d" InformativeScreenshot="ef804daf1ceedff366fe63adc847e18b.png" Reference="vZ2VzdSpbEGGUAxA1Waafw/2bqG-eOGxUuRmIeHTXrQ4w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='식품등의 기능성 표시·광고 자율심의 - 자료공개' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                </uix:NExtractData.Target>
+              </uix:NExtractData>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractTableData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="518.8571428571429,486.85714285714283" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="484.57142857142856,293.14285714285717" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="450.2857142857143,119.42857142857143" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="[CurrentRow(&quot;심의사항조회 Url&quot;).ToString]" />
+                      <Sequence DisplayName="Extract Detail" sap:VirtualizedContainerService.HintSize="450.2857142857143,113.71428571428571" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+              </ui:ForEachRow>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="2872, -8, 1936, 1048" BrowserType="Chrome" ContentHash="N5JYBfWj00O0WLtPHHokNg" IconBase64="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" InformativeScreenshot="7ba4c4697c380cb04b832fd73dd31462.jpg" Reference="vZ2VzdSpbEGGUAxA1Waafw/9zL-d2c4REWk_tTd3INl9w" Selector="&lt;html app='chrome.exe' title='기능성 표시식품 표시·광고 자율심의' /&gt;" Title="기능성 표시식품 표시·광고 자율심의" Url="https://adf.kfia.or.kr/main/companyMain.do" Version="V1" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="621.7142857142857,168.57142857142858" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[strSequenceName + &quot;End&quot;]" />
+  </Sequence>
+</Activity>
